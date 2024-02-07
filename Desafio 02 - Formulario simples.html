@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="Desafio 02 - Formulario simples.css" media="screen">
+
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro</h1>
+        <p id="subtitulo">Insira suas informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+            <fieldset class="grupo">
+            <div class="campo">
+                <label for="idade"><strong>Idade</strong></label>
+                <input type="number" name="idade" id="idade" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+        </fieldset>
+  
+        <div class="campo">
+            <label for="atuacao"><strong>Área de atuação</strong></label>
+            <input type="text" name="atuacao" id="atuacao">            
+        </div>
+       
+        <button type="button" class="botao" onclick="concluido()">Concluído</button>
+
+        <div id='dados'><span>Seus dados aparecerão aqui</span></div>
+    </form>
+
+    <script src="Desafio 02 - Formulario simples.js"></script>
+
+</body>
+</html>
